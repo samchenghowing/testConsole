@@ -192,6 +192,7 @@ int main()
 	SetPDFSize(dwPid2, 1920, 0, 800, 500);
 	//ChangePage(10);
 	Sleep(3000);
+	system("taskkill /PID " + dwPid2);
 
 	//open second PDF
 	dwPid = OpenPDF("test");
